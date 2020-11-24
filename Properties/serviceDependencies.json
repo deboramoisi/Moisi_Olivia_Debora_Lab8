@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "Moisi_Olivia_Debora_Lab8Context"
+    }
+  }
+}
