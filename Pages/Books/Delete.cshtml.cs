@@ -29,7 +29,10 @@ namespace Moisi_Olivia_Debora_Lab8.Pages.Books
                 return NotFound();
             }
 
-            Book = await _context.Book.FirstOrDefaultAsync(m => m.ID == id);
+            Book = await _context.Book
+                // includem pentru a afisa in pagina de delete si editura
+                .Include(p => p.Publisher)
+                .FirstOrDefaultAsync(m => m.ID == id);
 
             if (Book == null)
             {

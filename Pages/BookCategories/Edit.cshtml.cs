@@ -38,8 +38,8 @@ namespace Moisi_Olivia_Debora_Lab8.Pages.BookCategories
             {
                 return NotFound();
             }
-           ViewData["BookID"] = new SelectList(_context.Book, "ID", "ID");
-           ViewData["CategoryID"] = new SelectList(_context.Category, "ID", "ID");
+           ViewData["BookID"] = new SelectList(_context.Book, "ID", "Title");
+           ViewData["CategoryID"] = new SelectList(_context.Category, "ID", "CategoryName");
             return Page();
         }
 
