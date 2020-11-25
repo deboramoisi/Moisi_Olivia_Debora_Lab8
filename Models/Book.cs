@@ -20,6 +20,7 @@ namespace Moisi_Olivia_Debora_Lab8.Models
         public decimal Price { get; set; }
 
         [DataType(DataType.Date)]
+        [Display(Name = "Publishing Date")]
         public DateTime PublishingDate { get; set; }
 
         public int PublisherID { get; set; }
